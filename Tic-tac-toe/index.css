@@ -1,0 +1,9 @@
+body{
+   background-color: rgb(19, 120, 164);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
