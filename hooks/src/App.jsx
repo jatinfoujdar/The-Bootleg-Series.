@@ -6,6 +6,10 @@ function App() {
 
   const addValue = () => {
     setCount(count + 1);
+    // setCount((prevCounter)=> prevCounter + 1);
+    // setCount((prevCounter)=> prevCounter + 1);
+    // setCount((prevCounter)=> prevCounter + 1);
+    // setCount((prevCounter)=> prevCounter + 1);
   };
   const minusValue = () => {
     setCount(count - 1);
