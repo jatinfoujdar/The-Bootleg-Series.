@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script> 
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculate me! - A calculator made my me</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-    <div id="calculator">
-        <section id="calc-area">
-            <span>Calculator</span>
-            <textarea id="view" disabled></textarea>
-        </section>
-        <!-- Button Area -->
-        <section id="buttons-area">
-            <div class="button-group">
-                <span class="opr">%</span>
-                <span class="clear">C</span>
-                <span class="delete"><</span>
-                <span class="opr">/</span>
-            </div>
-            <div class="button-group">
-                <span class="num">7</span>
-                <span class="num">8</span>
-                <span class="num">9</span>
-                <span class="opr">*</span>
-            </div>
-            <div class="button-group">
-                <span class="num">4</span>
-                <span class="num">5</span>
-                <span class="num">6</span>
-                <span class="opr">-</span>
-            </div>
-            <div class="button-group">
-                <span class="num">1</span>
-                <span class="num">2</span>
-                <span class="num">3</span>
-                <span class="opr">+</span>
-            </div>
-            <div class="button-group">
-                <span class="num">0</span>
-                <span class="num">.</span>
-                <span class="calc">=</span>
-            </div>
-        </section>
+  <h1 class="text-center">Welcome to Calculate me!</h1>
+  <div class="container flex flex-col items-center mx-auto m-w-20">
+    <div class="row">
+      <input class="input" type="text"/>
     </div>
+    <div class="row">
+      <button class="button">C</button>
+      <button class="button">%</button>
+      <button class="button">M+</button>
+      <button class="button">M-</button>
+    </div>
+    <div class="row">
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">*</button>
+    </div>
+    <div class="row">
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">/</button>
+    </div>
+    <div class="row">
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">+</button>
+    </div>
+    <div class="row">
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">=</button>
+      <button class="button">-</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
