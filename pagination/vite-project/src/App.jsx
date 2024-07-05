@@ -23,6 +23,9 @@ function App() {
       setLoading(false); // Set loading to false whether fetch was successful or not
     }
   };
+  const selectedPage = (selectedPage)=>{
+    setPage(selectedPage);
+  }
 
   useEffect(() => {
     fetchProduct();
@@ -48,7 +51,7 @@ function App() {
           <span>⬅️</span>
           {
             [...Array(products.length/10)].map((_,i)=>{
-              return <span key={i}>{i+1}</span>
+              return <span onClick={()=> selectedPage(i+1)} key={i}>{i+1}</span>
             })
           }
           <span>1</span>
