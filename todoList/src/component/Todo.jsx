@@ -19,7 +19,7 @@ const Todo = () => {
       Todo List
     </div>
     <div className='mb-4'>
-        <input type='text' value={newTodos} onChange={()=>()} 
+        <input type='text' value={newTodos} onChange={(e)=> setNewTodos(e.target.value)} 
         className="border p-2 mr-2 rounded"
           placeholder="Add a new task"
         />
