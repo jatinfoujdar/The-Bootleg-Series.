@@ -1,0 +1,1 @@
+export const logo = "https://eujinnlucashow.github.io/todo-app/static/media/todo-list.221cb4e66bc2fdc73916138afff4196e.svg";
