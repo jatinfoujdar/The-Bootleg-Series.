@@ -12,6 +12,9 @@ const Todo = () => {
             setNewTodos('');
         }
     }
+    const deleteTodo = ()=>{
+        setTodos(todos.filter(todo => todo.id != id));
+    }
   return (
     <div >
         <div className='flex items-center font-bold text-lg'>
@@ -26,6 +29,8 @@ const Todo = () => {
          <button onClick={addTodo} className="bg-blue-500 text-white p-2 rounded">
           Add
         </button>
+        
+
     </div>
     <ul>
         {todos.map((todo) => (
