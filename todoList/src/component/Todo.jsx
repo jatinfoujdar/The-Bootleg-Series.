@@ -22,6 +22,22 @@ const Todo = () => {
   setEditingTodo(todo);
   setEditingText(todo.text);
   }
+  
+  const editTodo = () => {
+    setTodos(todos.map(todo => 
+      (todo.id === editingTodo.id 
+        ? { ...todo, text: editingText } 
+        : todo)
+    ));
+    setEditingTodo(null); 
+    setEditingText(''); 
+  };
+  
+
+  const cancelEdit = () =>{
+    setEditingTodo(null);
+    setEditingText('');
+  }
 
   return (
     <div>
@@ -44,7 +60,7 @@ const Todo = () => {
       <ul>
         {todos.map((todo) => (
           <li key={todo.id} className="flex items-center">
-           {editingTodo && editingText.id === todo.id ? (
+           {editingTodo && editingTodo.id === todo.id ? (
             <>
             <input
                 type="text"
@@ -52,7 +68,7 @@ const Todo = () => {
                 onChange={(e) => setEditingText(e.target.value)}
                 className="border p-2 mr-2 rounded flex-grow"
               />
-              <button onClick={() => saveEdit(todo.id)} className="ml-2 bg-green-500 text-white p-1 rounded">
+              <button onClick={editTodo} className="ml-2 bg-green-500 text-white p-1 rounded">
                 Save
               </button>
               <button onClick={cancelEdit} className="ml-2 bg-gray-500 text-white p-1 rounded">
