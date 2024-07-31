@@ -66,7 +66,7 @@ const Todo = () => {
             <button onClick={() => deleteTodo(todo.id)} className="ml-2 bg-red-500 text-white p-1 rounded">
               Delete
             </button>
-            <button onClick={() => startEditing(todo)} className="ml-2 bg-red-500 text-white p-1 rounded">
+            <button onClick={() => startEditing(todo)}  className="bg-yellow-500 ml-2 text-white p-1 rounded">
               Edit
             </button>
             </>
